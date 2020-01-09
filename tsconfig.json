@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-ionic-img-viewer": [
+        "dist/ngx-ionic-img-viewer"
+      ],
+      "ngx-ionic-img-viewer/*": [
+        "dist/ngx-ionic-img-viewer/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
