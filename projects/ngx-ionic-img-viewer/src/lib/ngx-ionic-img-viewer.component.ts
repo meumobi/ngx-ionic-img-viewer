@@ -1,19 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { NavParams, ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'lib-ngx-ionic-img-viewer',
-  template: `
-    <p>
-      ngx-ionic-img-viewer works!
-    </p>
-  `,
-  styles: []
+  templateUrl: './ngx-ionic-img-viewer.component.html',
+  styleUrls: ['./ngx-ionic-img-viewer.component.scss']
 })
-export class NgxIonicImgViewerComponent implements OnInit {
+export class NgxIonicImgViewerComponent implements OnInit, OnDestroy {
+  imgSrc: string;
+  sliderOptions = {
+    zoom: true,
+    passiveListeners: false
+  };
 
-  constructor() { }
+  constructor(
+    private navParams: NavParams,
+    private modalController: ModalController,
+  ) { }
 
   ngOnInit() {
+    this.imgSrc = this.navParams.get('imgSrc');
+  }
+
+  close() {
+    this.modalController.dismiss();
+  }
+
+  ngOnDestroy() {
+    console.log('a');
   }
 
 }

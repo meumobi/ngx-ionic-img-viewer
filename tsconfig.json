@@ -20,11 +20,11 @@
     ],
     "paths": {
       "ngx-ionic-img-viewer": [
-        "dist/ngx-ionic-img-viewer"
-      ],
-      "ngx-ionic-img-viewer/*": [
-        "dist/ngx-ionic-img-viewer/*"
+        "projects/ngx-ionic-img-viewer/src/public-api.ts"
       ]
+      // "ngx-ionic-img-viewer/*": [
+      //   "dist/ngx-ionic-img-viewer/*"
+      // ]
     }
   },
   "angularCompilerOptions": {
