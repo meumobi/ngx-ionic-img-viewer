@@ -5,3 +5,4 @@
 export * from './lib/ngx-ionic-img-viewer.service';
 export * from './lib/ngx-ionic-img-viewer.component';
 export * from './lib/ngx-ionic-img-viewer.module';
+export * from './lib/ngx-ionic-img-viewer.directive';
