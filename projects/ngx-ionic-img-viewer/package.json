@@ -1,5 +1,5 @@
 {
-  "name": "ngx-ionic-img-viewer",
+  "name": "@meumobi/ngx-ionic-img-viewer",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.1.3",
